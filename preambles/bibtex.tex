@@ -1,0 +1,10 @@
+\usepackage{apacite}
+% My note: using plain style when apacite is loaded will cause severe bibtex problems!!!
+% Suggestion: load only the package that relates to the bibliographystyle used, or problems would occur.
+\makeatletter
+  \let\@internalcite\cite
+  \def\cite{\def\citeauthoryear##1##2{##1, ##2}\@internalcite}
+  \def\shortcite{\def\citeauthoryear##1{##2}\@internalcite}
+  \def\@biblabel#1{\def\citeauthoryear##1##2{##1, ##2}[#1]\hfill}
+\makeatother
+\bibliographystyle{apacite}

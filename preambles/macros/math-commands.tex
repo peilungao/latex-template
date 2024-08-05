@@ -1,0 +1,43 @@
+\newcommand{\vecbf}[1]{\ensuremath{\vec{\mathbf{#1}}}}
+\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
+
+\newcommand{\tefrac}[2]{\frac{\text{#1}}{\text{#2}}}
+\newcommand*\keystroke[1]{ % #REF -  https://tex.stackexchange.com/questions/5226/keyboard-font-for-latex
+  \tikz[baseline=(key.base)]
+    \node[%
+      draw,
+      fill=white,
+      drop shadow={shadow xshift=0.25ex,shadow yshift=-0.25ex,fill=black,opacity=0.75},
+      rectangle,
+      rounded corners=2pt,
+      inner sep=1pt,
+      line width=0.5pt,
+      font=\scriptsize\ttfamily
+    ](key) {#1\strut}
+  ;
+}
+
+
+\newenvironment{alieqn}{%
+  \begin{equation}%
+    \begin{aligned}%
+}{%
+    \end{aligned}%
+  \end{equation}%
+}
+
+% Math shortcuts
+\newcommand{\so}{\therefore}
+\newcommand{\due}{\because}
+\newcommand{\fa}{\forall}
+
+% math text command
+\newcommand{\tx}[1]{\text{#1}}
+% parenthesis automatic L&R
+\newcommand{\of}[1]{\left(#1\right)}
+% square brackets automatic L&R
+\newcommand{\off}[1]{\left[#1\right]}
+% curly braces automatic L&R
+\newcommand{\offf}[1]{\left\{#1\right\}}
+% 
+\newcommand{\at}[1]{\left.#1\right|}

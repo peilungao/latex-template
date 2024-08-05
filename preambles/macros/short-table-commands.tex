@@ -1,0 +1,18 @@
+\usepackage{diagbox}
+\usepackage{slashbox}
+\newcommand*{\dl}{\\ \hline}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\arraybackslash}m{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}m{#1}}
+
+\newcommand{\strike}{\backslashbox{\phantom{.}}{\phantom{.}}} % from: https://www.overleaf.com/latex/examples/table-cells-with-diagonal-lines/zrnpkbmzvtkr
+
+% for longtable environments::
+% \caption{}\label{} \dl
+% headers~~~ \dl
+% \endfirsthead
+% \multicolumn{}{c}{\sffamily\large 续表}
+% \endhead
+% \bottomrule  
+% \endfoot

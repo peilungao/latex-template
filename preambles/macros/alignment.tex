@@ -1,0 +1,24 @@
+\newenvironment{centereq}[1][0.8]
+{% Source: https://tex.stackexchange.com/questions/576930/center-with-equal-amount-of-text-per-line
+\trivlist
+\centering
+\setlength{\leftskip}{\dimexpr(\columnwidth-#1\columnwidth)/2\relax plus 1em}%
+\setlength{\rightskip}{\leftskip}%
+\item\relax
+}
+{\endtrivlist}
+
+% paragraph indentation
+\setlength{\parindent}{1.5em}
+
+% paragraph separation
+\setlength{\parskip}{\baselineskip}
+
+%\newcommand{\q}[1]{{\par\vspace*{0.4cm}\noindent\large\bfseries #1 \par\vspace*{0.4cm}}}
+%\newcommand{\sq}[1]{{\par\vspace*{0.4cm}\noindent\large\itshape #1 \par\vspace*{0.4cm}}}
+
+\newcommand{\appendixpagenumbering}{
+  \break
+  \pagenumbering{arabic}
+  \renewcommand{\thepage}{\thesection-\arabic{page}}
+}

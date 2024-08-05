@@ -1,0 +1,15 @@
+% \incfig is used for .pdf_tex files generated from .svg files, which makes .svg embedable into LaTeX
+
+\NewDocumentCommand{\incfig}{%
+  O{1} O{./figures/} m%
+}{%
+  \def\svgwidth{#1\columnwidth}%
+  \import{#2}{#3.pdf_tex}%
+}
+
+
+%\newcommand{\incfig}[2][1]{%
+%  \def\svgwidth{#1\columnwidth}%
+%  \import{./figures/}{#2.pdf_tex}%
+%}
+

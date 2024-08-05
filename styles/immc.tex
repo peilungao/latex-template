@@ -1,0 +1,50 @@
+\usepackage[fontsize=12.7pt]{fontsize}
+% some fancyhdr-like settings.
+\pagestyle{fancy}
+
+\fancyfoot{}
+\setcounter{page}{1}
+\setlength{\headheight}{15pt}
+
+%\fancyhead[L]{\controlsequence} %这是页眉页脚设置
+%\fancyhead[R]{\TheTitle}
+\fancyhead{}
+\fancyhead[C]{\controlsequence}
+\fancyfoot[C]{第\thepage 页，共\pageref*{LastPage} 页}
+\renewcommand{\headrulewidth}{1pt} %分隔线宽度
+\renewcommand{\footrulewidth}{0pt}
+
+\pagenumbering{arabic}
+
+\titleformat*{\section}{\fontsize{14}{16.8}\sffamily} %font family&shape to be continued
+\titleformat*{\subsection}{\fontsize{12}{14.4}\bfseries}
+\titleformat*{\subsubsection}{\fontsize{12}{14.4}\bfseries\rmfamily}
+
+%========================================%
+\renewcommand*{\maketitle}{%这是标题页设置
+  \thispagestyle{fancy}%
+  \par%
+  %\vspace*{0.2em}%
+  \begin{center}
+    {\fontsize{16}{19.2}\sffamily\TheTitle}
+  \end{center}
+  \par%
+}
+%========================================%
+
+%========================================%
+\newenvironment{summary}{% 我定义了一个summary环境，用来写摘要
+  \begin{center}
+    {\fontsize{16}{16.8} \textit{摘要}}
+  \end{center}
+  \hspace*{1.5em}
+}{%
+  \hspace*{\fill}
+}
+%========================================%
+\newenvironment{keywords} % 关键词环境，用来写keywords
+{ \par%
+  \vspace{1em}%
+  {\sffamily 关键词：}
+}{%
+}
