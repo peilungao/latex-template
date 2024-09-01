@@ -1,0 +1,43 @@
+% alias=汉语字体设置
+%%%%%
+% 此文件提供了“！！本地！！”的文件中文字体部署。若整个文档中不含有汉语文字则不需要包含此宏包
+% \ProvidesPackage{/Users/Disk/03-Com-Scientia/01-TeX/Settings/Fonts/SimplifiedChineseFonts}
+\usepackage[fontset=none, scheme=plain]{ctex}
+%\usepackage[fontset=none]{ctex}
+% directory of fonts: /Users/veritas/Library/Fonts
+
+
+%%%%% <main font>
+% 主字体：{Founder:方正新书宋_GBK	Regular}
+%   标识符：FZXSSK--GBK1-0
+%   文件：FZXSSK.TTF
+% boldfont: {Founder:方正粗宋简繁}
+%   标识符：FZCSK--GBK1-0
+%   文件：FZCSK.TTF
+% italicfont: {Founder:方正汉文正楷 简}
+%   标识符：FZHANWZKS--GB1-0
+%   文件：FZHanWZKJW.TTF
+
+\setCJKmainfont[BoldFont={FZCSK--GBK1-0}, ItalicFont={FZHANWZKS--GB1-0},]{FZXSSK--GBK1-0}
+%%%%% </main font>
+% Checked---------------------%
+%%%%% <sans serif font>
+
+
+% 方正黑体_GBK
+\setCJKsansfont[BoldFont={FZCHSJW--GB1-0}]{FZHTK--GBK1-0}
+
+%%%%% </sans serif font>
+% <font-families>
+% 仿宋字体：{Founder:方正仿宋_GBK	Regular}
+%   标识符：FZFSK--GBK1-0
+%   文件：FZFSK.TTF
+\setCJKmonofont{FZFSK--GBK1-0}
+\setCJKfamilyfont{zhfangsong}{FZFSJW--GB1-0}
+\newcommand*{\fangsong}{\CJKfamily{zhfangsong}}
+
+
+
+
+% </font-families>
+\ctexset{space=auto} % Automatic chinese & english word spacing
