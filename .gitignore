@@ -2,3 +2,5 @@
 ._DS_Store
 desktop.ini
 **/test/
+*.TTF
+**/out.nosync/

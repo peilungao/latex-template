@@ -3,7 +3,7 @@ import os
 import re
 
 # Define the base directory
-base_dir = "/home/veritas/latex-templates"
+base_dir = "/Users/veritas/latex-templates"
 
 # Define the input file (basic.tex)
 input_file = os.path.join(base_dir, "templates/article/basic.tex")

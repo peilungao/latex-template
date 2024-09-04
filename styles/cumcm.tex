@@ -1,0 +1,57 @@
+% it can be used for any generic paper, for example CUMCM.
+% it includes setup for page header & footer, bibliography, and some common environments
+
+
+
+%==================
+% biblatex setup
+\usepackage[backend=biber,style=numeric,autocite=inline,showlocation=true]{biblatex}
+
+
+\addbibresource{reference.bib}
+
+% page styles
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\fancyfoot{}
+\setcounter{page}{1}
+\setlength{\headheight}{15pt}
+
+%\fancyhead[L]{\controlsequence} %这是页眉页脚设置
+%\fancyhead[R]{\TheTitle}
+\fancyhead{}
+\fancyhead[L]{FOOBAR}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{1pt} %分隔线宽度
+\renewcommand{\footrulewidth}{0pt}
+
+\pagenumbering{arabic}
+\thispagestyle{fancy}
+
+\renewcommand*{\maketitle}{%这是标题页设置
+  \thispagestyle{fancy}%
+  \par%
+  \vspace*{0.5em}%
+  \begin{center}
+    {\fontsize{16}{19.2}\sffamily\TheTitle}
+  \end{center}
+  \par%
+}
+
+\newenvironment{summary}{% 我定义了一个summary环境，用来写摘要
+  \begin{center}
+    {\fontsize{16}{16.8} \textbf{摘要}}
+  \end{center}
+  \hspace*{0.5em}
+}{%
+  \hspace*{\fill}
+}
+
+\newenvironment{keywords} % 关键词环境，用来写keywords
+{ \par%
+  \vspace{1em}%
+  {\sffamily 关键词：}
+}{%
+}
