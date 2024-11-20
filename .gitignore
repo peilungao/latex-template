@@ -4,3 +4,4 @@ desktop.ini
 **/test/
 *.TTF
 **/out.nosync/
+**/scripts/

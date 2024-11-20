@@ -1,5 +1,11 @@
 Author: giorogosleonidas@gmail.com
 
+
+
+`.tarignore-packaging` is to package the whole project for others to use. `.tarignore` is to transfter the whole project to another machine.
+
+
+
 ### Todo
 - [x] set font::: select some of my favorites and keep them neatly placed inside one package.
 - [x] learn [lstlisting], set the basic format of writing [python], [java], [c++], [matlab] codes
@@ -14,3 +20,9 @@ Cooperation of packages
 2. More highlighting support for self-defined commands. Even if it can't detect what command we use, we should be able to change it in the default settings.
 3. Code folding for `\item` command. It's really annoying that I tried for several times to fold it but all failed.
 4. The extention can read the newcommands within the preamble, but not another sty package.
+# Some user-notes
+To put the template in your default dir, you can add `export TEXINPUTS="~/latex-templates:"` into the `.bashrc` or `.zshrc`.
+
+# Suggested LaTeX manuals:
+[lshort](https://texdoc.org/serve/lshort-zh-cn.pdf/0)
+[latex wikibook](https://upload.wikimedia.org/wikipedia/commons/2/2d/LaTeX.pdf)

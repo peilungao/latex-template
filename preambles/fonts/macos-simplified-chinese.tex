@@ -18,14 +18,15 @@
 %   标识符：FZHANWZKS--GB1-0
 %   文件：FZHanWZKJW.TTF
 
-\setCJKmainfont[BoldFont={FZCSK--GBK1-0}, ItalicFont={FZHANWZKS--GB1-0},]{FZXSSK--GBK1-0}
+\setCJKmainfont[BoldFont={FZCSK--GBK1-0}, ItalicFont={FZKTK--GBK1-0},]{FZXSSK--GBK1-0}
 %%%%% </main font>
 % Checked---------------------%
 %%%%% <sans serif font>
 
 
 % 方正黑体_GBK
-\setCJKsansfont[BoldFont={FZCHSJW--GB1-0}]{FZHTK--GBK1-0}
+% 方正粗宋简繁
+\setCJKsansfont[BoldFont={FZCSK--GBK1-0}]{FZHTK--GBK1-0}
 
 %%%%% </sans serif font>
 % <font-families>
@@ -41,3 +42,7 @@
 
 % </font-families>
 \ctexset{space=auto} % Automatic chinese & english word spacing
+
+
+\setCJKfamilyfont{LongYin}{FZZJ-LONGYTJF--GBK1-0}
+\newcommand*{\longyin}{\CJKfamily{LongYin}}

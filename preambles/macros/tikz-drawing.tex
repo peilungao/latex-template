@@ -1,0 +1,15 @@
+\newcommand{\intersections}[3]{
+  \path[name intersections={of=#1 and #2, by=#3}];
+  \path (#3);
+  \pgfgetlastxy{\Px}{\Py}
+}
+\newcommand{\labledIntersection}[3]{
+  \path (#1);
+  \pgfgetlastxy{\Px}{\Py}
+  \draw[thin,dashed] (#1) -- (\Px,0) node[below] {#2};
+  \draw[thin,dashed] (#1) -- (0,\Py) node[left] {#3};
+}
+
+% tikzstyle settings
+\tikzstyle{stdA}=[midway, sloped, above]
+\tikzstyle{stdB}=[midway, sloped, below]

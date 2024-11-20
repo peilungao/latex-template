@@ -24,7 +24,7 @@
 % Hyperlinks
 \usepackage[bookmarks=true,unicode]{hyperref}
 \usepackage{bookmark}
-\usepackage{hyperxmp}
+%\usepackage{hyperxmp}
 
 % Table stuffs
 % Used for table cell settings
@@ -45,6 +45,7 @@
 \usetikzlibrary{arrows.meta, automata, arrows}
 \usetikzlibrary{angles, quotes}
 \usetikzlibrary{matrix}
+\usetikzlibrary{patterns}
 % </tikz libraries>
 
 % Multiline commenting
@@ -64,11 +65,18 @@
 
 % Extensive font specifications
 \usepackage{fontspec}
+%\newfontfamily\gothicfont{UnifrakturMaguntia}
+
+% Providing Gothic style fonts
+\usepackage{yfonts}
 
 \usepackage{xparse}
 
 % font-sizing
-\usepackage[fontsize=11pt]{fontsize}
+
 \usepackage{anyfontsize}
 
 %\usepackage[T1]{inputenc}
+
+% svg importing. It automatically turns .svg into .pdf_tex file through inkscape. 
+\usepackage{svg}

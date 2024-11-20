@@ -1,0 +1,9 @@
+*.DS_Store
+desktop.ini
+*.tar
+*.zip
+*.rar
+*.7z
+fonts/
+scripts/
+.git/
