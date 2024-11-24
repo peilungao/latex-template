@@ -2,7 +2,7 @@ Author: giorogosleonidas@gmail.com
 
 
 
-`.tarignore-packaging` is to package the whole project for others to use. `.tarignore` is to transfter the whole project to another machine.
+`.tarignore-packaging` is to package the whole project for others to use (contains only the functioning parts). `.tarignore` is to transfter the whole project to another machine.
 
 
 
@@ -24,5 +24,5 @@ Cooperation of packages
 To put the template in your default dir, you can add `export TEXINPUTS="~/latex-templates:"` into the `.bashrc` or `.zshrc`.
 
 # Suggested LaTeX manuals:
-[lshort](https://texdoc.org/serve/lshort-zh-cn.pdf/0)
-[latex wikibook](https://upload.wikimedia.org/wikipedia/commons/2/2d/LaTeX.pdf)
+- [lshort](https://texdoc.org/serve/lshort-zh-cn.pdf/0) 
+- [latex wikibook](https://upload.wikimedia.org/wikipedia/commons/2/2d/LaTeX.pdf)
