@@ -69,9 +69,15 @@ node[sloped] % this could help
 \fill[pattern=north east lines,pattern color=green, opacity=0.6] (1,1) -- (2,2) -- (4,2) --cycle;
 ```
 
-## Draw at the center of a triangle
+## Draw at the center of a shape
 
 [centering](https://tex.stackexchange.com/questions/593614/draw-at-the-center-of-a-triangle-tikz)
+
+```tex
+\node at (barycentric cs:A=1,B=1,C=1) {D};
+```
+
+D is at the center of A, B, and C.
 
 ## 3D drawing
 
@@ -135,6 +141,29 @@ The use of `transform shape` for node argument.
 
 [reference](https://tex.stackexchange.com/questions/544417/text-along-the-planes-in-3d)
 
+## Tikz externalizing
+
+Externalizing tikz figures to save the time for compiling unchanged tikz graphs.
+
+[reference](https://tex.stackexchange.com/questions/45/how-to-speed-up-latex-compilation-with-several-tikz-pictures)
+
+> Read section 52, "Externalizing Graphics", of the PGF manual v3.1.9a.
+
+Usage:
+
+```tex
+\usetikzlibrary{external}
+\tikzexternalize
+```
+
+To refer to external standalone files, use
+
+```tex
+\begin{figure}
+  \input{path/to/tikz/source/tex}
+\end{figure}
+```
+  
 # Code printing
 
 The key is the package named `lstlistings`. You can simply use the `\input` to print the code. But before that you should firstly declare the language of the program using `\lstset{language=<desired-language>}`

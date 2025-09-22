@@ -5,3 +5,5 @@ desktop.ini
 *.TTF
 **/out.nosync/
 **/scripts/
+**.png
+**.jpg
