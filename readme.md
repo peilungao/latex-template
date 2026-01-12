@@ -1,28 +1,33 @@
-Author: giorogosleonidas@gmail.com
+# Latex Templates
 
+`.tarignore-packaging` is to package the whole project for others to use (contains only the functioning parts). `.tarignore` is to transfer the whole project to another machine.
 
+## Todo
 
-`.tarignore-packaging` is to package the whole project for others to use (contains only the functioning parts). `.tarignore` is to transfter the whole project to another machine.
-
-
-
-### Todo
 - [x] set font::: select some of my favorites and keep them neatly placed inside one package.
 - [x] learn [lstlisting], set the basic format of writing [python], [java], [c++], [matlab] codes
-checked at 2024.02.12 22:51:21, with additional note: the langauge identification does not need manual settings, which is great
+checked at 2024.02.12 22:51:21, with additional note: the language identification does not need manual settings, which is great
 - [x] create one package for [ExtendedEssay]
 
-Cooperation of packages
+- [ ] Cooperation of packages
 
+## Some points that I think vscode.latex-workshop can improve
 
-# Some points that I think the LaTeX in VSCode can improve:
 1. Detect the current command. For example, when it's currently in `\frac{#1}{#2}`, just please don't pop up those shortcuts because writing a `\section{}` etc. in a fraction is totally useless (and it really slows me down when writing documents).
 2. More highlighting support for self-defined commands. Even if it can't detect what command we use, we should be able to change it in the default settings.
 3. Code folding for `\item` command. It's really annoying that I tried for several times to fold it but all failed.
-4. The extention can read the newcommands within the preamble, but not another sty package.
-# Some user-notes
+4. The extension can read the *newcommands* within the preamble, but not another sty package.
+
+## Getting Started
+
+```sh
+cd ~/
+git clone chttps://github.com/Immanuel-Aristotle/latex-template
+```
+
 To put the template in your default dir, you can add `export TEXINPUTS="~/latex-templates:"` into the `.bashrc` or `.zshrc`.
 
-# Suggested LaTeX manuals:
-- [lshort](https://texdoc.org/serve/lshort-zh-cn.pdf/0) 
+## Suggested LaTeX manuals
+
+- [lshort](https://texdoc.org/serve/lshort-zh-cn.pdf/0)
 - [latex wikibook](https://upload.wikimedia.org/wikipedia/commons/2/2d/LaTeX.pdf)
